@@ -1,13 +1,13 @@
 {% set name = "qt-material" %}
-{% set version = "2.14" %}
+{% set version = "2.15" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/qt-material-{{ version }}.tar.gz
-  sha256: b5dbb5ade97217cf7ae336bb7c047c90beb39dc7f2048a498c916ad5f2f7ae23
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 6e2b159f2b336e45d8bb972637cf7ba4f5058ce2799ff3e73bd23bf636782ea3
 
 build:
   noarch: python
